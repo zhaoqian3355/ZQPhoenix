@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Autofac;
+using Autofac.Core;
 using ZQNet.Infrastructure.Crosscutting.AOP.Ioc;
 
 namespace ZQNet.Presentation.Web.ZQPhoenix
@@ -19,10 +21,6 @@ namespace ZQNet.Presentation.Web.ZQPhoenix
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             var container = new ContainerBuilderFactory().ContainerBuilder;
-
-            container.RegisterType<>();
-
-
         }
     }
 }
