@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ZQPhoenix", "ZQPhoenix", "{D493C640-C4C6-4979-9911-0A184B5E0AB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Presentation", "1-Presentation", "{55E31213-55C2-4BFF-825F-09DC4C172EC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZQNet.Presentation.Web.ZQPhoenix", "ZQNet.Presentation.Web.ZQPhoenix\ZQNet.Presentation.Web.ZQPhoenix.csproj", "{A51A878A-E60D-44A1-B34A-8780AA84DD6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Domain", "4-Domain", "{BA92354F-9EA6-4FD6-848D-4A2323DC9D52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZQNet.Domain.ZQPhoenix", "ZQNet.Domain.ZQPhoenix\ZQNet.Domain.ZQPhoenix.csproj", "{D6D3A2E4-B8A2-4E1C-999D-EB1D5B9EC365}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A51A878A-E60D-44A1-B34A-8780AA84DD6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A51A878A-E60D-44A1-B34A-8780AA84DD6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A51A878A-E60D-44A1-B34A-8780AA84DD6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A51A878A-E60D-44A1-B34A-8780AA84DD6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6D3A2E4-B8A2-4E1C-999D-EB1D5B9EC365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6D3A2E4-B8A2-4E1C-999D-EB1D5B9EC365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6D3A2E4-B8A2-4E1C-999D-EB1D5B9EC365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6D3A2E4-B8A2-4E1C-999D-EB1D5B9EC365}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{55E31213-55C2-4BFF-825F-09DC4C172EC0} = {D493C640-C4C6-4979-9911-0A184B5E0AB6}
+		{A51A878A-E60D-44A1-B34A-8780AA84DD6A} = {55E31213-55C2-4BFF-825F-09DC4C172EC0}
+		{BA92354F-9EA6-4FD6-848D-4A2323DC9D52} = {D493C640-C4C6-4979-9911-0A184B5E0AB6}
+		{D6D3A2E4-B8A2-4E1C-999D-EB1D5B9EC365} = {BA92354F-9EA6-4FD6-848D-4A2323DC9D52}
+	EndGlobalSection
+EndGlobal
