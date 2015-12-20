@@ -27,9 +27,12 @@ namespace ZQNet.Presentation.Web.ZQPhoenix.Controllers
         // 
         // GET: /HelloWorld/Welcome/ 
 
-        public string Welcome(int id,string name)
+        public ActionResult Welcome(string name,int numTimes=1)
         {
-            return HttpUtility.HtmlEncode("id: "+id+ ", Hello " + name);
+            ViewBag.Message = "Hello " + name;
+            ViewBag.NumTimes = numTimes;
+
+            return View();
         }
     }
 }
