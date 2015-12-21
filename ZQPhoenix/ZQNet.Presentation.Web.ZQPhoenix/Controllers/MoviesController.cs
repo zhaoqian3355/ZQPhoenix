@@ -16,8 +16,29 @@ namespace ZQNet.Presentation.Web.ZQPhoenix.Controllers
         private MovieDBContext db = new MovieDBContext();
 
         // GET: Movies
-        public ActionResult Index(string searchString)
+        //public ActionResult Index(string searchString)
+        //{
+        //    var movies = from m in db.Movies
+        //                 select m;
+
+        //    if (!String.IsNullOrEmpty(searchString))
+        //    {
+        //        movies = movies.Where(s => s.Title.Contains(searchString));
+        //    }
+
+        //    return View(movies);
+        //}
+
+        public ActionResult Index(string movieGenre,string searchString)
         {
+            var genreLst = new List<string>();
+
+            var genreQry = from q in db.Movies orderby q.Genre select q.Genre;
+
+            genreLst.AddRange(genreQry.Distinct());
+
+            ViewBag.movieGenre = new MultiSelectList(genreLst);
+
             var movies = from m in db.Movies
                          select m;
 
@@ -26,13 +47,12 @@ namespace ZQNet.Presentation.Web.ZQPhoenix.Controllers
                 movies = movies.Where(s => s.Title.Contains(searchString));
             }
 
-            return View(movies);
-        }
+            if (!String.IsNullOrEmpty(movieGenre))
+            {
+                movies = movies.Where(s => s.Genre == movieGenre);
+            }
 
-        [HttpPost]
-        public string Index(FormCollection fc, string searchString)
-        {
-            return "<h3> From [HttpPost]Index: " + searchString + "</h3>";
+            return View(movies);
         }
 
         // GET: Movies/Details/5

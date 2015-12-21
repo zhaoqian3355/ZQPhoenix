@@ -3,14 +3,12 @@
 @{
     ViewBag.Title = "Index";
 }
-
 <h2>Index</h2>
-
 <p>
     @Html.ActionLink("Create New", "Create")
-
-    @using (Html.BeginForm("Index","Movies",FormMethod.Post))
+    @using (Html.BeginForm("Index","Movies",FormMethod.Get))
     {
+        <p>Genre:@Html.DropDownList("movieGenre","")</p>
         <p>Title:@Html.TextBox("searchString")</p>
         <input type="submit" value="Filter" />
     }
@@ -31,7 +29,6 @@
         </th>
         <th></th>
     </tr>
-
 @foreach (var item in Model) {
     <tr>
         <td>
@@ -53,5 +50,4 @@
         </td>
     </tr>
 }
-
 </table>
