@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ContosoUniversity">
+  <logicalClassDesignerModelMoniker Id="3ac5d8c7-311a-4cea-aa98-521247c33e09" />
+  <nestedChildShapes>
+    <classShape Id="85cbb3d8-ed03-4f00-a149-dda3b3614d5b" absoluteBounds="0.625, 0.75, 1.5, 1.660319010416667" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="72b4aafb-edfc-4dd1-881e-929e4859e2f4" LastKnownName="Course" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="36e5af54-efdc-4d8e-be49-d8dabb10565b" absoluteBounds="0.64, 1.1400000000000001, 1.4700000000000002, 0.757080078125" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="ebaced9a-5c0a-44ec-85cc-d774367db786" absoluteBounds="0.64, 1.9070800781250001, 1.4700000000000002, 0.40323893229166663" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b90ff10d-a801-4b56-ad2f-4eed99be19af" absoluteBounds="3.375, 0.75, 1.5, 2.0141601562500004" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="c1672248-def2-41af-8ed2-eb506b674b61" LastKnownName="Enrollment " />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="6e506781-980b-444d-a4c3-58ca0b4eeb1e" absoluteBounds="3.39, 1.1400000000000001, 1.4700000000000002, 0.757080078125" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="0f00e467-f337-4a74-9c16-ec7652532668" absoluteBounds="3.39, 1.9070800781250001, 1.4700000000000002, 0.757080078125" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f910edc1-a961-4a59-9dbe-5a1d3011d4e4" absoluteBounds="6, 1, 1.5, 1.8372395833333335" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="783916fb-0e09-4abe-808c-8f89c7fa181b" LastKnownName="Student" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="89eb67c7-90fd-4cf1-9224-6e126022d063" absoluteBounds="6.015, 1.3900000000000001, 1.4700000000000002, 0.93400065104166663" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="1dea7f20-0daa-4a49-aaa3-d431205a2f87" absoluteBounds="6.015, 2.3340006510416664, 1.4700000000000002, 0.40323893229166663" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

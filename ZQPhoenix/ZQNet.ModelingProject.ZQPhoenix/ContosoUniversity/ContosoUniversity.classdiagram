@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="3ac5d8c7-311a-4cea-aa98-521247c33e09" name="ContosoUniversity" linkedPackageId="d18117cc-2844-4c91-b3f8-702aba31b85c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="f630bf10-d2b9-4c80-88c7-34e64caeccc2">
+      <profileInstance Id="d2420ee8-6adf-471c-befc-e1d1099e40e6" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="62a94bcb-006d-44e1-9078-6bb7c824f6ad">
+      <profileInstance Id="1e09673a-2712-4112-9134-7bf6b5713230" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="72b4aafb-edfc-4dd1-881e-929e4859e2f4" name="Course" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3bdf7d6e-a309-4b78-a613-5dc34ec99f3a" />
+        <ownedAttributesInternal>
+          <property Id="986c129b-1a12-4761-8315-c2b2f369f7cc" name="CourseId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f8f28d13-328a-453d-b5c8-97956e7d0b22" />
+          </property>
+          <property Id="d1119586-9e60-4a2b-b573-04e9c73590c2" name="Title" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ff9bd29a-1dbf-4f90-99c2-a3f94c46da4a" />
+          </property>
+          <property Id="a16b06e6-d59e-4ddd-a076-71948f764f1f" name="Credits" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e00f0728-7705-45f8-a386-a44e2952b64d" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="17670a5b-ef42-402e-97a0-7b872c238b18" name="Enrollments" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c3fcd7ec-13cf-4c49-bbf3-2ddf6e10f856" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c1672248-def2-41af-8ed2-eb506b674b61" name="Enrollment " isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="15241cee-0653-43a3-ab29-f8bf5c4aa661" />
+        <ownedAttributesInternal>
+          <property Id="941e4aab-6642-41ba-bafe-f952b589eaa0" name="EnrollmentID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4c40505c-1727-47a5-a498-2583e3bc9587" />
+          </property>
+          <property Id="538a0207-36ec-4e62-9253-5d6a7c704c44" name="CourseID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fc6a16d7-cc32-45f6-9497-63e7ee673291" />
+          </property>
+          <property Id="042aba75-eccf-45c5-8cd8-ceb756e4cfa7" name="StudentID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eb6ffcfa-e6da-4944-aa15-91f9f23a9ad8" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="b7fe847f-0b38-4a90-bacf-e1d493807dd6" name="Grade" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="24c008f7-a959-4922-bab9-60fa927f4475" />
+          </operation>
+          <operation Id="fc1f9f5d-7bd6-485c-8dc4-bd0cad885f30" name="Course" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f75cc68e-b64b-4ce4-8d25-6cbbb854b8c2" />
+          </operation>
+          <operation Id="018baeae-19ae-4f3e-a939-7f4d010387eb" name="Student" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8cf5234a-b04b-404c-8061-a8c72861429b" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="783916fb-0e09-4abe-808c-8f89c7fa181b" name="Student" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="37446018-5254-4b43-bc19-aced3e412387" />
+        <ownedAttributesInternal>
+          <property Id="ba12081f-3bc4-4070-bac9-982ed16c6abf" name="ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5fe89d54-7625-4485-b717-cd1512d3eab0" />
+          </property>
+          <property Id="99a52aa5-db78-4974-89a4-22a76aa8d7e3" name="LastName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="79611b76-026a-49f6-b7b3-52ba6d989941" />
+          </property>
+          <property Id="66189990-1a1a-480e-ad88-f098df1c65e3" name="FirstMidName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6fb37367-4f07-429b-8ca3-938267ceec31" />
+          </property>
+          <property Id="ca1498e8-5fd7-4e43-b0fb-a8e8bc4cdb8c" name="EnrollmentDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="69da4e51-fdd4-40e6-90c7-7f01ca77cb96" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a70c3228-a238-40ad-81ce-eb58a056a96c" name="Enrollments" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d8dcc61a-8dce-434d-8516-9eb36c967dcd" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="d18117cc-2844-4c91-b3f8-702aba31b85c" name="ZQNet.ModelingProject.ZQPhoenix">
+    <elementDefinition Id="818c6e24-6abb-4c51-8e42-db0a895fdf5f" />
+  </package>
+</logicalClassDesignerModel>
