@@ -87,15 +87,34 @@ namespace ZQNet.Presentation.Web.ZQPhoenix.Controllers
         // 详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkId=317598。
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,LastName,FirstMidName,EnrollmentDate")] Student student)
+        public ActionResult Edit(int? id)
         {
-            if (ModelState.IsValid)
+            if (id == null)
             {
-                db.Entry(student).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            return View(student);
+
+            var entity=db.Students.Find(id);
+
+            if (entity != null)
+            {
+                if (TryUpdateModel(entity, "", new string[] { "LastName", "FirstMidName", "EnrollmentDate" }))
+                {
+                    try
+                    {
+                        db.SaveChanges();
+
+                        return RedirectToAction("Index");
+                    }
+                    catch (Exception)
+                    {
+                        //Log the error (uncomment dex variable name and add a line here to write a log.
+                        ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
+                    }
+                }
+            }
+
+            return View(entity);
         }
 
         // GET: Students/Delete/5
