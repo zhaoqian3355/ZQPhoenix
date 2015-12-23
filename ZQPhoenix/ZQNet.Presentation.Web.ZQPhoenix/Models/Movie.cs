@@ -7,7 +7,7 @@ namespace ZQNet.Presentation.Web.ZQPhoenix.Models
 {
     public class Movie
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         [DisplayName("标题"), StringLength(60, MinimumLength = 3)]
         public string Title { get; set; }

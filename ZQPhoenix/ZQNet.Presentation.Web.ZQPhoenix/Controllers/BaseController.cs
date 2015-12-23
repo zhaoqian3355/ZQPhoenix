@@ -12,7 +12,7 @@ namespace ZQNet.Presentation.Web.ZQPhoenix.Controllers
 {
     public abstract  class BaseController : Controller
     {
-        private MovieDBContext db = new MovieDBContext();
+        private ZQPhoenixDbContext db = new ZQPhoenixDbContext();
 
         // GET: Movies
         //public ActionResult Index(string searchString)
